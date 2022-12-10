@@ -11,3 +11,5 @@ The implementation given on Task1_2bcde.py is based on the paper by Zhao et al. 
 The Task2 folder contains the implementation for the following sections:
 - Task2_1_distill.py contains the implementation from the GitHub repo https://github.com/GeorgeCazenavette/mtt-distillation, to generate synthetic datasets based on CIFAR10 and MNIST, both from randomly sampled original images and from Gaussian noise. The implementation also provides a way to store a trainable version of the synthetic dataset, as well as a visualization of the generated synthetic images.
 - Task2_1.py contains the implementation of both from scratch vanilla and from scratch synthetic dataset training, with FLOPs per second and compute time measuring
+
+The implementation given on Task2_1_distill.py is based on the paper by Cazenavette et al. (https://arxiv.org/abs/2203.11932)
