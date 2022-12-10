@@ -1,0 +1,69 @@
+  0%|                                                                                        | 0/50000 [00:00<?, ?it/s]E:\Documents\UofTProjects\PhD\ECE1512\Project_B\Project_B_Supp\Task_2\Task2_1_distill.py:91: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  labels_all.append(class_map[torch.tensor(sample[1]).item()])
+100%|█████████████████████████████████████████████████████████████████████████| 50000/50000 [00:01<00:00, 49018.58it/s]
+50000it [00:00, 3733846.10it/s]
+E:\Documents\UofTProjects\PhD\ECE1512\Project_B\Project_B_Supp\Task_2\Task2_1_distill.py:111: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at C:\cb\pytorch_1000000000000\work\torch\csrc\utils\tensor_new.cpp:233.)
+  label_syn = torch.tensor([np.ones(args.ipc,dtype=np.int_)*i for i in range(num_classes)], dtype=torch.long, requires_grad=False, device=args.device).view(-1) # [0,0,0, 1,1,1, ..., 9,9,9]
+Hyper-parameters:
+ {'dataset': 'CIFAR10', 'subset': 'imagenette', 'model': 'ConvNet', 'ipc': 10, 'eval_mode': 'S', 'num_eval': 1, 'eval_it': 100, 'epoch_eval_train': 20, 'Iteration': 100, 'lr_img': 1000.0, 'lr_lr': 1e-05, 'lr_teacher': 0.01, 'lr_init': 0.01, 'batch_real': 256, 'batch_syn': 100, 'batch_train': 256, 'pix_init': 'real', 'dsa': False, 'dsa_strategy': 'color_crop_cutout_flip_scale_rotate', 'data_path': './data', 'buffer_path': './buffers', 'expert_epochs': 3, 'syn_steps': 20, 'max_start_epoch': 20, 'zca': True, 'load_all': False, 'no_aug': False, 'texture': False, 'canvas_size': 2, 'canvas_samples': 1, 'max_files': None, 'max_experts': None, 'force_save': False, 'device': 'cuda', 'zca_trans': ZCAWhitening(), 'im_size': [32, 32], 'dsa_param': <utils.ParamDiffAug object at 0x000001FDCEFFB7C0>, '_wandb': {}, 'distributed': False}
+Evaluation model pool:  ['ConvNet']
+BUILDING DATASET
+class c = 0: 5000 real images
+class c = 1: 5000 real images
+class c = 2: 5000 real images
+class c = 3: 5000 real images
+class c = 4: 5000 real images
+class c = 5: 5000 real images
+class c = 6: 5000 real images
+class c = 7: 5000 real images
+class c = 8: 5000 real images
+class c = 9: 5000 real images
+real images channel 0, mean = 0.0000, std = 0.2681
+real images channel 1, mean = 0.0000, std = 0.2532
+real images channel 2, mean = 0.0000, std = 0.2617
+initialize synthetic data from random real images
+[2022-12-10 03:16:12] training begins
+Expert Dir: ./buffers\CIFAR10\ConvNet
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 0
+DC augmentation parameters:
+ {'crop': 4, 'scale': 0.2, 'rotate': 45, 'noise': 0.001, 'strategy': 'none'}
+ 81%|██████████████████████████████████████████████████████████████████▍               | 17/21 [00:00<00:00, 33.60it/s]
+[2022-12-10 03:16:17] Evaluate_00: epoch = 0020 train time = 4 s train loss = 0.699456 train acc = 1.0000, test acc = 0.2238
+Evaluate 1 random ConvNet, mean = 0.2238 std = 0.0000
+
+100%|██████████████████████████████████████████████████████████████████████████████████| 21/21 [00:04<00:00,  4.69it/s]
+[2022-12-10 03:16:19] iter = 0000, loss = 0.9938
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:16:30] iter = 0010, loss = 0.9382
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:16:42] iter = 0020, loss = 0.9655
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:16:53] iter = 0030, loss = 0.9911
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:17:05] iter = 0040, loss = 0.9522
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:17:17] iter = 0050, loss = 0.9622
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:17:28] iter = 0060, loss = 0.9392
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:17:40] iter = 0070, loss = 0.9059
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:17:51] iter = 0080, loss = 0.9603
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+[2022-12-10 03:18:03] iter = 0090, loss = 0.9348
+loading file ./buffers\CIFAR10\ConvNet\replay_buffer_0.pt
+-------------------------
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 100
+DC augmentation parameters:
+ {'crop': 4, 'scale': 0.2, 'rotate': 45, 'noise': 0.001, 'strategy': 'none'}
+
+ 76%|██████████████████████████████████████████████████████████████▍                   | 16/21 [00:00<00:00, 76.20it/s]
+[2022-12-10 03:18:17] Evaluate_00: epoch = 0020 train time = 3 s train loss = 0.782573 train acc = 1.0000, test acc = 0.2377
+Evaluate 1 random ConvNet, mean = 0.2377 std = 0.0000
+
+100%|██████████████████████████████████████████████████████████████████████████████████| 21/21 [00:03<00:00,  5.31it/s]
+[2022-12-10 03:18:19] iter = 0100, loss = 0.8320

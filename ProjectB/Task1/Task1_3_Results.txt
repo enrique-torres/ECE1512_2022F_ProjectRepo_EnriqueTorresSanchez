@@ -1,0 +1,17 @@
+CIFAR10 - ResNet18 - Normal Training
+Loss: 0.680 | Acc: 81.930% (8193/10000)
+
+CIFAR10 - ResNet18 - Synthetic Training - From Real Images
+test acc = 18.47%
+
+CIFAR10 - ResNet18 - Synthetic Training - From Gaussian Noise
+test acc = 16.45%
+
+MNIST - ResNet18 - Normal Training
+Loss: 0.016 | Acc: 99.490% (9949/10000)
+
+MNIST- ResNet18 - Synthetic Training - From Real Images
+test acc = 60%
+
+MNIST- ResNet18 - Synthetic Training - From Gaussian Noise
+test acc = 54.67%

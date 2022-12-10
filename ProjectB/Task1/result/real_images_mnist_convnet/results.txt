@@ -1,0 +1,8 @@
+Evaluation
+model_train = ConvNet, model_eval = ConvNet, iteration = 100
+DC augmentation parameters:
+ {'crop': 4, 'scale': 0.2, 'rotate': 45, 'noise': 0.001, 'strategy': 'crop_scale_rotate'}
+[2022-12-06 23:36:24] Evaluate_00: epoch = 0020 train time = 0 s train loss = 1.598487 train acc = 0.5500, test acc = 0.8327
+Evaluate 1 random ConvNet, mean = 0.8327 std = 0.0000
+
+Run 1 experiments, train on ConvNet, evaluate 1 random ConvNet, mean  = 83.27%  std = 0.00%

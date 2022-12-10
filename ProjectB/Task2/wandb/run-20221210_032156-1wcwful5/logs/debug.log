@@ -1,0 +1,31 @@
+2022-12-10 03:21:56,320 INFO    MainThread:41876 [wandb_setup.py:_flush():68] Configure stats pid to 41876
+2022-12-10 03:21:56,320 INFO    MainThread:41876 [wandb_setup.py:_flush():68] Loading settings from C:\Users\etsms\.config\wandb\settings
+2022-12-10 03:21:56,320 INFO    MainThread:41876 [wandb_setup.py:_flush():68] Loading settings from E:\Documents\UofTProjects\PhD\ECE1512\Project_B\Project_B_Supp\Task_2\wandb\settings
+2022-12-10 03:21:56,320 INFO    MainThread:41876 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-12-10 03:21:56,320 INFO    MainThread:41876 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'Task2_1_distill.py', 'program': 'E:\\Documents\\UofTProjects\\PhD\\ECE1512\\Project_B\\Project_B_Supp\\Task_2\\Task2_1_distill.py'}
+2022-12-10 03:21:56,321 INFO    MainThread:41876 [wandb_init.py:_log_setup():476] Logging user logs to E:\Documents\UofTProjects\PhD\ECE1512\Project_B\Project_B_Supp\Task_2\wandb\run-20221210_032156-1wcwful5\logs\debug.log
+2022-12-10 03:21:56,321 INFO    MainThread:41876 [wandb_init.py:_log_setup():477] Logging internal logs to E:\Documents\UofTProjects\PhD\ECE1512\Project_B\Project_B_Supp\Task_2\wandb\run-20221210_032156-1wcwful5\logs\debug-internal.log
+2022-12-10 03:21:56,321 INFO    MainThread:41876 [wandb_init.py:init():516] calling init triggers
+2022-12-10 03:21:56,321 INFO    MainThread:41876 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {'dataset': 'CIFAR10', 'subset': 'imagenette', 'model': 'ConvNet', 'ipc': 10, 'eval_mode': 'S', 'num_eval': 1, 'eval_it': 100, 'epoch_eval_train': 20, 'Iteration': 100, 'lr_img': 1000.0, 'lr_lr': 1e-05, 'lr_teacher': 0.01, 'lr_init': 0.01, 'batch_real': 256, 'batch_syn': None, 'batch_train': 256, 'pix_init': 'gnoise', 'dsa': False, 'dsa_strategy': 'color_crop_cutout_flip_scale_rotate', 'data_path': './data', 'buffer_path': './buffers', 'expert_epochs': 3, 'syn_steps': 20, 'max_start_epoch': 20, 'zca': True, 'load_all': False, 'no_aug': False, 'texture': False, 'canvas_size': 2, 'canvas_samples': 1, 'max_files': None, 'max_experts': None, 'force_save': False, 'device': 'cuda', 'zca_trans': ZCAWhitening(), 'im_size': (32, 32), 'dsa_param': <utils.ParamDiffAug object at 0x000001D66322B7F0>}
+2022-12-10 03:21:56,322 INFO    MainThread:41876 [wandb_init.py:init():569] starting backend
+2022-12-10 03:21:56,322 INFO    MainThread:41876 [wandb_init.py:init():573] setting up manager
+2022-12-10 03:21:56,330 INFO    MainThread:41876 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn, using: spawn
+2022-12-10 03:21:56,334 INFO    MainThread:41876 [wandb_init.py:init():580] backend started and connected
+2022-12-10 03:21:56,346 INFO    MainThread:41876 [wandb_init.py:init():658] updated telemetry
+2022-12-10 03:21:56,348 INFO    MainThread:41876 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2022-12-10 03:21:56,639 INFO    MainThread:41876 [wandb_run.py:_on_init():2006] communicating current version
+2022-12-10 03:21:56,759 INFO    MainThread:41876 [wandb_run.py:_on_init():2010] got version response 
+2022-12-10 03:21:56,759 INFO    MainThread:41876 [wandb_init.py:init():728] starting run threads in backend
+2022-12-10 03:21:58,644 INFO    MainThread:41876 [wandb_run.py:_console_start():1986] atexit reg
+2022-12-10 03:21:58,644 INFO    MainThread:41876 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2022-12-10 03:21:58,645 INFO    MainThread:41876 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2022-12-10 03:21:58,645 INFO    MainThread:41876 [wandb_run.py:_redirect():1931] Redirects installed.
+2022-12-10 03:21:58,645 INFO    MainThread:41876 [wandb_init.py:init():765] run started, returning control to user process
+2022-12-10 03:24:04,015 INFO    MainThread:41876 [wandb_run.py:_finish():1753] finishing run enrique-torres-sanchez/DatasetDistillation/1wcwful5
+2022-12-10 03:24:04,015 INFO    MainThread:41876 [wandb_run.py:_atexit_cleanup():1955] got exitcode: 0
+2022-12-10 03:24:04,015 INFO    MainThread:41876 [wandb_run.py:_restore():1938] restore
+2022-12-10 03:24:04,015 INFO    MainThread:41876 [wandb_run.py:_restore():1944] restore done
+2022-12-10 03:24:08,811 INFO    MainThread:41876 [wandb_run.py:_footer_history_summary_info():3408] rendering history
+2022-12-10 03:24:08,812 INFO    MainThread:41876 [wandb_run.py:_footer_history_summary_info():3440] rendering summary
+2022-12-10 03:24:08,815 INFO    MainThread:41876 [wandb_run.py:_footer_sync_info():3364] logging synced files

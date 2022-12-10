@@ -1,0 +1,5 @@
+Synthetic Dataset - ConvNet (originally trained network)
+test acc = 0.2189
+
+Synthetic Dataset - ResNet18
+test acc = 0.1472

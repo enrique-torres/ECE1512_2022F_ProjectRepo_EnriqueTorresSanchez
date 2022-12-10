@@ -1,0 +1,15 @@
+CIFAR10 Test (ConvNet)
+FLOPS = 5.14 GFLOPS
+test acc = 80.61%
+
+MNIST Test (ConvNet)
+FLOPS = 4.91 GFLOPS
+test acc = 99.41%
+
+CIFAR10 Test (ResNet18)
+FLOPS = 55.59 GFLOPS
+test acc = 82.16%
+
+MNIST Test (ResNet18)
+FLOPS = 45.62 GFLOPS
+test acc = 99.58%

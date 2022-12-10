@@ -1,0 +1,4 @@
+Accuracy without remembering
+Loss: 20.257 | Acc: 48.250% (4825/10000)
+Accuracy with remembering
+Loss: 0.912 | Acc: 76.250% (7625/10000)

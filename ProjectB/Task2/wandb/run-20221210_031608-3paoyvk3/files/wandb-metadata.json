@@ -1,0 +1,56 @@
+{
+    "os": "Windows-10-10.0.19044-SP0",
+    "python": "3.10.8",
+    "heartbeatAt": "2022-12-10T08:16:08.890261",
+    "startedAt": "2022-12-10T08:16:08.275729",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--dataset=CIFAR10",
+        "--ipc=10",
+        "--syn_steps=20",
+        "--expert_epochs=3",
+        "--max_start_epoch=20",
+        "--lr_img=1000",
+        "--lr_lr=1e-05",
+        "--lr_teacher=0.01",
+        "--buffer_path=./buffers",
+        "--data_path=./data",
+        "--zca"
+    ],
+    "state": "running",
+    "program": "E:\\Documents\\UofTProjects\\PhD\\ECE1512\\Project_B\\Project_B_Supp\\Task_2\\Task2_1_distill.py",
+    "codePath": "Task2_1_distill.py",
+    "host": "DESKTOP-K77AF0S",
+    "username": "etsms",
+    "executable": "C:\\Users\\etsms\\miniconda3\\envs\\pytorch\\python.exe",
+    "cpu_count": 10,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 3600.0,
+        "min": 0.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3600.0,
+            "min": 0.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "total": 1228.1318321228027,
+        "used": 456.6435432434082
+    },
+    "gpu": "NVIDIA GeForce GTX 1080",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1080",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 63.934486389160156
+    }
+}
